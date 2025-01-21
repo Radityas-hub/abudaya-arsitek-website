@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover the paradise island of Bali with our expert travel guides. From stunning beaches to cultural landmarks, our website offers insider tips and recommendations for an unforgettable Bali experience. Book your trip today and immerse yourself in the natural beauty and rich culture of Bali.">
+  <title>Abudaya Arsitek</title>
+  <link rel="stylesheet" href="../styles/projectStyle.css" />
+  <link rel="stylesheet" href="../styles/global.css">
+
+  <link rel="shortcut icon" href="../assets/images/logo.png" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" /> -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"> -->
+  <!-- <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=yBI67nJIFF7SKCanNPvwNJuqOYNrJzla4M5MdeJty0U6EEzgpNvq0uP8b2lYw2Zk" charset="UTF-8"></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> -->
+  </script>
+  <!-- <script src="./script/index.js"></script> -->
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("hgKH359PnOFyiGU_W");
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <a href="https://wa.link/0b9f16" target="_blank" class="scroll-up-btn">
+    <i class="bx bxl-whatsapp bx-tada" style="color: #ffffff"></i>
+    <span> Chat Us Now </span>
+  </a>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo" data-aos="fade-down" data-aos-duration="1000">
+        <a href="#">Abudaya Arsitek</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <p class="mobile-logo hidden">Menu</p>
+          <i class="fas fa-times"></i>
+        </div>
+        <li data-aos="fade-down" data-aos-duration="500"><a href="#header-section" class="nav-link active mt-100"
+            onclick="closeSidebar()" style="color: rgba(255, 255, 255, 1);">Beranda <div class="underline"></div></a></li>
+        <li data-aos="fade-down" data-aos-duration="600"><a href="./pages/projectPages.html" class="nav-link"
+            onclick="closeSidebar()">Layanan </a></li>
+        <li data-aos="fade-down" data-aos-duration="700"><a href="./pages/aboutPages.html" class="nav-link"
+            onclick="closeSidebar()">Tentang </a></li>
+        <li class="sosmed-box">
+          <a href="#" class="sosmed"><img src="./assets/images/facebook.svg" alt="" width="100%" height="auto"></a>
+          <a href="#" class="sosmed"><img src="./assets/images/instagram.svg" alt="" width="100%" height="auto"></a>
+          <a href="#" class="sosmed"><img src="./assets/images/x.svg" alt="" width="100%" height="auto"></a>
+        </li>    
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container">
+
+        <div class="head-container">
+          <div class="title-wrapper">
+            <p>Proyek</p>
+            <div class="title-underline"></div>
+          </div>
+
+          <select id="kategoriFilter">
+            <option value="">semua</option>
+            <option value="Teknologi">Teknologi</option>
+            <option value="Olahraga">Olahraga</option>
+        </select>
+        </div>
+
+        <div class="artikel-container">
+            <div id="artikelList"></div>
+        </div>
+    </div>
+
+  <section class="footer-section ">
+		<div class="footer-container">
+			<div class="footer-content">
+				<p class="website-name">Abudaya Arsitek.</p>
+				<p class="footer-text">Lorem Ipsum is simply dummy text of the printing and.</p>
+        <div class="sosmed-box">
+          <a href="#" class="sosmed"><img src="./assets/images/facebook.svg" alt="" width="100%" height="auto"></a>
+          <a href="#" class="sosmed"><img src="./assets/images/instagram.svg" alt="" width="100%" height="auto"></a>
+          <a href="#" class="sosmed"><img src="./assets/images/x.svg" alt="" width="100%" height="auto"></a>
+        </div>
+			</div>
+			<div class="footer-content">
+				<p class="website-name">Tentang</p>
+				<div class="footer-links">
+					<a href="#">
+						<p>Beranda</p>
+					</a>
+					<a href="#about-section">
+						<p>Tentang</p>
+					</a>
+					<a href="#product-section">
+						<p>Proyek</p>
+					</a>
+					<a href="#faq-section">
+						<p>FAQ</p>
+					</a>					
+				</div>
+			</div>
+			<div class="footer-content">
+				<p class="website-name">Halaman Detail</p>
+				<div class="footer-links">
+					<a href="#">
+						<p>Beranda</p>
+					</a>
+					<a href="./pages/product/product.html">
+						<p>Belanja</p>
+					</a>
+					<a href="./pages/cart/cart.html">
+						<p>Keranjang</p>
+					</a>
+				</div>
+			</div>
+			<div class="footer-content">
+				<p class="website-name">Kontak</p>
+				<div class="footer-links">
+					<a href="mailto:halo@mediaku.idn">
+						<p>halo@xperience.idn</p>
+					</a>
+					<p>+62 813 4482 9209</p>
+					<p>Jln. Gajah Mada, Bandung</p>
+				</div>
+			</div>
+		</div>
+		<p class="copyright"
+			style="position:absolute;bottom:20px;left: 0;width: 100%;text-align: center;opacity: 0.8;color: white;font-weight: 500;font-size: 14px;">
+			Copyright © <span>Abudaya Arsitek.</span></p>
+	</section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../scripts/data.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+    function closeSidebar() {
+      if (navbar.classList.contains("show")) {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+        overlay.classList.remove("show");
+      }
+    }
+    function showAlert() {
+      Swal.fire({
+        title: 'SUCCESS!',
+        text: 'Your message has been succesfully send.',
+        icon: 'success',
+        confirmButtonText: 'OK'
+      })
+      submitBtn.classList.remove("isloading")
+    }
+    function showFailed() {
+      Swal.fire({
+        title: 'Failed!',
+        text: 'Your message has failed to send.',
+        icon: 'cancel',
+        confirmButtonText: 'OK'
+      })
+    }
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const submitBtn = document.getElementById('submitBtn');
+
+    function checkInputs() {
+      if (nameInput.value.trim() !== '' && messageInput.value.trim() !== '') {
+        submitBtn.disabled = false;
+        submitBtn.classList.add("clickable")
+      } else {
+        submitBtn.disabled = true;
+        submitBtn.classList.remove("clickable")
+      }
+    }
+    nameInput.addEventListener('input', checkInputs);
+    emailInput.addEventListener('input', checkInputs);
+    messageInput.addEventListener('input', checkInputs);
+
+    submitBtn.addEventListener('click', function () {
+      submitBtn.classList.add("isloading")
+    })
+  </script>
+  </script>
+</body>
+
+</html>
